@@ -50,7 +50,7 @@ INSERT INTO `chat_settings` (`setting`, `value`, `jsSetting`) VALUES
 ('offlineDisplay', '<img src=\"images/chat/offline.jpg\" alt=\"Live Support Offline\" title=\"Live Support Offline\" />', 0),
 ('startChatTitleMessage', 'Start Chatting', 0),
 ('leaveTitleMessage', 'Leave a message!', 0),
-('template', 'default', 0),
+('template', 'bootstrap', 0),
 ('defaultLang', 'en', 0);");
 	} 
 	
