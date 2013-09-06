@@ -1,0 +1,9 @@
+.clearMainbox {
+	clear: both;
+	margin-top: 0px;	
+}
+
+.actionbox textarea.writemessage {
+	width: 360px;
+	height: 104px;
+}

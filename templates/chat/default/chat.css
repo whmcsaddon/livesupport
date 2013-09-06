@@ -1,0 +1,477 @@
+html,body {
+	width: 520px;
+}
+body {
+	margin: 5px;
+	background-color: white;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.actionbox {
+	width: 502px;
+	height: 126px;
+	background-image: url("images/chat/actionbox_middle.jpg");
+	background-repeat: repeat-x;
+	float: left;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.actionboxLeft {
+	width: 4px;
+	height: 126px;
+	background-image: url("images/chat/actionbox_left.jpg");
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.actionboxRight {
+	width: 4px;
+	height: 126px;
+	background-image: url("images/chat/actionbox_right.jpg");
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.actionbox textarea.writemessage {
+	width: 360px;
+	height: 104px;
+}
+
+.mainbox {
+	width: 498px;
+	height: 273px;
+	background-image: url("images/chat/mainbox.jpg");
+	background-repeat: repeat-x;
+	float: left;
+	padding: 5px;
+	overflow: hidden;	
+}
+
+.mainboxLeft {
+	width: 6px;
+	height: 283px;
+	background-image: url("images/chat/mainbox_left.jpg");
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.mainboxRight {
+	width: 6px;
+	height: 283px;
+	background-image: url("images/chat/mainbox_right.jpg");
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.mainboxBottom {
+	width: 497px;
+	height: 7px;
+	background-image: url("images/chat/mainbox_bottom.jpg");
+	background-repeat: repeat-x;
+	float: left;
+	overflow: hidden;
+}
+
+.mainboxBottomRight {
+	width: 11px;
+	height: 7px;
+	background-image: url("images/chat/mainbox_bottom_right.jpg");
+	background-repeat: no-repeat;
+	float: left;
+	overflow: hidden;
+}
+
+.mainboxBottomLeft {
+	width: 11px;
+	height: 7px;
+	background-image: url("images/chat/mainbox_bottom_left.jpg");
+	background-repeat: no-repeat;
+	float: left;
+	overflow: hidden;
+}
+
+.tabLower {
+	background-image: url("images/chat/tab_bottom.jpg");
+	background-position: -59px;
+	background-repeat: no-repeat;
+	float: right;
+	margin-top: -12px;
+	margin-left: 2px;
+	width: 61px;
+	height: 21px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #3ba5ae;
+	text-align: center;
+	padding-top: 3px;
+}
+
+.tabLowerSelected {
+	width: 60px;
+	background-position: 0px;
+	color: #000a6c;
+}
+
+.tabUpper {
+	background-image: url("images/chat/tab_top.jpg");
+	background-position: -123px;
+	background-repeat: no-repeat;
+	float: left;
+	width: 125px;
+	height: 26px;
+	margin-bottom: -8px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #2e9ca6;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.tabUpperSelected {
+	width: 124px;
+	background-position: 0px;
+	color: #000a6c;
+	margin-right: 1px;
+}
+
+.clear {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+
+.clearMainbox {
+	clear: both;
+	margin-top: -10px;	
+}
+
+
+
+.inchat.client.uname {
+	color: #000;
+	font-weight: bold;
+}
+
+.inchat.operator.uname {
+	color: #009;
+	font-weight: bold;
+}
+
+.inchat.operator.usays {
+	color: #009;
+}
+
+.inchat.script {
+	background-color:#C6FFBB;
+	padding: 5px;
+	border: 1px #0C0 solid;
+	color: #060;
+	font-family:"Courier New", Courier, monospace;
+	font-size: 12px;
+	margin: 5px;
+	margin-left: 50px;
+	width: 350px;
+}
+
+.inchat.script .executed {
+	padding: 10px;	
+}
+
+.inchat.downloadFile {
+	background-color:#CCC;
+	padding: 5px;
+	border: 1px #999 solid;
+	color: #333;
+	font-family:"Courier New", Courier, monospace;
+	font-size: 12px;
+	margin: 5px;
+	margin-left: 50px;
+	width: 350px;
+}
+
+.inchat.downloadFile a {
+	color: #006;
+	text-decoration: none;
+}
+
+.inchat.downloadFile a:visited {
+	color: #006;
+	text-decoration: none;
+}
+
+.inchat.downloadFile a:active {
+	color: #006;
+	text-decoration: none;
+}
+
+.inchat.downloadFile a:hover {
+	color: #003;
+	text-decoration: none;
+}
+
+.inchat.connectedUser {
+	color: #090;
+}
+
+.inchat.transfer {
+	color: #090;	
+}
+
+.inchat.transfer.operator {
+	background-color:#A6FFA6;
+	padding: 5px;
+	border: 1px #0C0 solid;
+	color: #060;
+	font-family:"Courier New", Courier, monospace;
+	font-size: 12px;
+	margin: 5px;
+	margin-left: 50px;
+	width: 350px;
+}
+
+.inchat.transfer.operator.red {
+	background-color:#FCC;
+	border: 1px #C00 solid;
+	color: #900;
+}
+
+#soundSetter {
+	background-image:url("images/chat/soundbg.jpg");
+	border:1px solid #7D7D7D;
+	float:left;
+	margin-top:-8px;
+	padding:2px;
+	color: #818181;
+}
+
+#soundSetter:hover {
+	color: #000;
+}
+
+#chatInnerWindow {
+	background-color: white;
+	border: 1px solid #cdcdcd;
+}
+#liveupdate {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding: 5px;
+	overflow: auto;
+	height: 265px;
+}
+#receiver {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+#noteReceiver {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+#chatBox {
+	overflow: hidden;
+}
+#scripts {
+	width: 100%;
+}
+#scriptMessage {
+	width: 100%;
+}
+.selectScript {
+	width: 25%;
+}
+.selectScriptDescription {
+	width: 25%;
+}
+#chatScripts {
+	height: 105px;
+	margin-right: 4px;
+	margin-top: 4px;
+	overflow: auto;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-top: 2px;
+	background-color: white;
+}
+.scriptTable {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+
+.scriptTable th, .scriptTable td {
+	background-color:white;
+	border-bottom:1px solid #CDCDCD;
+	padding:5px;
+}
+.scriptTable th {
+	color:#000;
+	font-weight: bold;
+}
+.scriptTable textarea {
+	width: 100%;
+}
+.noteTable {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+
+.noteTable th, .noteTable td {
+	background-color:white;
+	border-bottom:1px solid #CDCDCD;
+	padding:5px;
+}
+.noteTable th {
+	color:#000;
+	font-weight: bold;
+}
+.noteTable textarea {
+	width: 100%;
+}
+
+#noteViewHolder {
+	width: 480px;
+	height: 265px;
+	background-color: white;
+	border: 1px solid #cdcdcd;
+	overflow: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding: 5px;
+}
+
+.upload-progress div.meterHolder {
+	width:150px;
+	height:15px;
+	font-size:1px; /* IE display hack */
+	margin-top:1px;
+	margin-bottom:1px;
+	border:1px solid #CCC;
+	background-image: url('images/chat/progressbarbg.jpg');
+}
+
+.upload-progress div.meter {
+	width:0px;
+	height:15px;
+	font-size:1px; /* IE display hack */
+	background-image: url('images/chat/progressbar.jpg');
+}
+
+.upload-progress div.readout {
+	padding:5px 0px 0px 12px;
+	font-family:"Courier New", Courier, monospace;
+	font-size:10px;
+	line-height:10px;
+}
+
+.upload-progress div.readout span {
+	font-weight:bold;
+}
+
+.upload-completed {
+	border: groove medium;
+	width: 335px;
+	height: 110px;
+	overflow: auto;
+}
+
+
+.upload-completed div.download {
+	background-color:white;
+	border-bottom:1px solid #7C7C7C;
+	font-family:courier;
+	font-size:9px;
+	height:56px;
+	padding-left:10px;
+	width:auto;
+}
+
+.upload-completed div.download div.downloadtext {
+	padding-top:10px;
+	width: 190px;
+	height: 50px;
+	overflow:hidden;
+}
+
+.upload-completed div.download div.downloadtext span.uploadSuccess {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.upload-completed div.download img {
+	float:right;
+}
+
+#chatUploadTable {
+	margin: 0 auto;
+	width: 100%;
+}
+
+#client {
+	overflow: hidden;
+}
+
+#clientViewHolder {
+	width: 480px;
+	height: 265px;
+	background-color: white;
+	border: 1px solid #cdcdcd;
+	overflow: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding: 5px;
+}
+
+.clientInfo {
+	width: 100%;
+	background-color: #E1E1E1;
+	border: 1px solid #999;
+	padding: 5px;
+	border-collapse:collapse;
+}
+
+.clientInfo tr:nth-child(even) {
+	background: #E1E1E1;
+}
+
+.clientInfo tr:nth-child(odd) {
+	background: #F8F8F8;
+}
+
+.clientInfo td:nth-child(odd) {
+	width: 25%;
+}
+
+.clientInfo td {
+	padding: 4px;
+	margin-left: 2px;
+}
+
+.clientSummery {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.clientSummery a {
+	color: #009;
+}
+
+.clientSummery a:visited {
+	color: #009;
+}
+
+.clientSummery a:active {
+	color: #009;
+}
+
+.clientSummery a:hover {
+	color: #003;
+	text-decoration: none;
+}

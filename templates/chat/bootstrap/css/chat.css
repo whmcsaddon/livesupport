@@ -1,0 +1,350 @@
+.actionbox {
+	padding: 5px;
+}
+
+.actionboxLeft {
+	width: 4px;
+	height: 126px;
+	background-image: url("images/chat/actionbox_left.jpg");
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.actionboxRight {
+	width: 4px;
+	height: 126px;
+	background-image: url("images/chat/actionbox_right.jpg");
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#writingMessage {
+	margin-top: 12px;
+	margin-right: 12px;
+}
+
+textarea.writemessage {
+	width: 404px;
+	height: 35px;
+	font-size: 14px;
+	padding: 6px;
+}
+
+#chatInput, #chatNotes {
+	margin: 10px;
+	border-top: 1px #e1e1e1 solid;
+	padding-top: 10px;
+}
+
+.mainbox {
+	height: 448px;
+	padding: 5px;
+	overflow: hidden;	
+}
+
+.mainbox table {
+	width: 100%;
+}
+
+
+
+.clear {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+
+
+
+.inchat.client.uname {
+	color: #000;
+	font-weight: bold;
+}
+
+.inchat.operator.uname {
+	color: #009;
+	font-weight: bold;
+}
+
+.inchat.operator.usays {
+	color: #009;
+}
+
+.inchat.script {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #468847;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	font-family:"Courier New", Courier, monospace;
+	font-size: 12px;
+	margin: 5px;
+	font-weight: bold;
+}
+
+.inchat.script .executed {
+	padding: 5px 15px;
+	font-size: 10px;
+	font-weight: normal;	
+}
+
+.inchat.downloadFile {
+	background-color:#CCC;
+	padding: 5px;
+	border: 1px #999 solid;
+	color: #333;
+	font-family:"Courier New", Courier, monospace;
+	font-size: 12px;
+	margin: 5px;
+	margin-left: 50px;
+	width: 350px;
+}
+
+.inchat.downloadFile a {
+	color: #006;
+	text-decoration: none;
+}
+
+.inchat.downloadFile a:visited {
+	color: #006;
+	text-decoration: none;
+}
+
+.inchat.downloadFile a:active {
+	color: #006;
+	text-decoration: none;
+}
+
+.inchat.downloadFile a:hover {
+	color: #003;
+	text-decoration: none;
+}
+
+.inchat.connectedUser {
+	color: #090;
+}
+
+.inchat.transfer {
+	color: #090;	
+}
+
+.inchat.transfer.operator {
+	background-color:#A6FFA6;
+	padding: 5px;
+	border: 1px #0C0 solid;
+	color: #060;
+	font-family:"Courier New", Courier, monospace;
+	font-size: 12px;
+	margin: 5px;
+	margin-left: 50px;
+	width: 350px;
+}
+
+.inchat.transfer.operator.red {
+	background-color:#FCC;
+	border: 1px #C00 solid;
+	color: #900;
+}
+
+#noteViewHolder, #liveupdate {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding: 5px;
+	overflow: auto;
+	height: 414px;
+}
+#receiver {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+#noteReceiver {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+#chatBox {
+	overflow: hidden;
+}
+#scripts {
+	width: 100%;
+}
+#scriptMessage {
+	width: 100%;
+}
+.selectScript {
+	width: 25%;
+}
+.selectScriptDescription {
+	width: 25%;
+}
+#chatScripts {
+	height: 504px;
+	overflow: auto;
+	padding: 4px;
+	background-color: white;
+}
+.scriptTable {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+
+.scriptTable th, .scriptTable td {
+	background-color:white;
+	border-bottom:1px solid #CDCDCD;
+	padding:5px;
+}
+.scriptTable th {
+	color:#000;
+	font-weight: bold;
+}
+.scriptTable textarea {
+	width: 100%;
+}
+.noteTable {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+
+.noteTable th, .noteTable td {
+	background-color:white;
+	border-bottom:1px solid #CDCDCD;
+	padding:5px;
+}
+.noteTable th {
+	color:#000;
+	font-weight: bold;
+}
+
+.upload-progress div.meterHolder {
+	width:150px;
+	height:15px;
+	font-size:1px; /* IE display hack */
+	margin-top:1px;
+	margin-bottom:1px;
+	border:1px solid #CCC;
+	background: white;
+}
+
+.upload-progress div.meter {
+	width:0px;
+	height:15px;
+	font-size:1px; /* IE display hack */
+	background: #ccc;
+}
+
+.upload-progress div.readout {
+	padding:5px 0px 0px 12px;
+	font-family:"Courier New", Courier, monospace;
+	font-size:10px;
+	line-height:10px;
+}
+
+.upload-progress div.readout span {
+	font-weight:bold;
+}
+
+.upload-completed {
+	border: groove medium;
+	width: 335px;
+	height: 110px;
+	overflow: auto;
+}
+
+
+.upload-completed div.download {
+	background-color:white;
+	border-bottom:1px solid #7C7C7C;
+	font-family:courier;
+	font-size:9px;
+	height:56px;
+	padding-left:10px;
+	width:auto;
+}
+
+.upload-completed div.download div.downloadtext {
+	padding-top:10px;
+	width: 190px;
+	height: 50px;
+	overflow:hidden;
+}
+
+.upload-completed div.download div.downloadtext span.uploadSuccess {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.upload-completed div.download img {
+	float:right;
+}
+
+#chatUploadTable {
+	margin: 0 auto;
+	width: 100%;
+}
+
+#client {
+	overflow: hidden;
+}
+
+#clientViewHolder {
+	height: 471px;
+	background-color: white;
+	overflow: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding: 5px;
+}
+
+.clientInfo {
+	width: 100%;
+	background-color: #E1E1E1;
+	border: 1px solid #999;
+	padding: 5px;
+	border-collapse:collapse;
+}
+
+.clientInfo tr:nth-child(even) {
+	background: #E1E1E1;
+}
+
+.clientInfo tr:nth-child(odd) {
+	background: #F8F8F8;
+}
+
+.clientInfo td:nth-child(odd) {
+	width: 25%;
+}
+
+.clientInfo td {
+	padding: 4px;
+	margin-left: 2px;
+}
+
+.clientSummery {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.clientSummery a {
+	color: #009;
+}
+
+.clientSummery a:visited {
+	color: #009;
+}
+
+.clientSummery a:active {
+	color: #009;
+}
+
+.clientSummery a:hover {
+	color: #003;
+	text-decoration: none;
+}

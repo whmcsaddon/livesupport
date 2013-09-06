@@ -1,0 +1,138 @@
+body {
+	margin: 10px;
+	font-size: 14px;
+}
+
+#footer {
+	width: 574px;
+	text-align:center;
+	font-size: 10px;
+	color: #000;
+	line-height:18px;
+}
+
+#footer a {
+	color: #009;
+	text-decoration: none;
+}
+
+#footer a:visited {
+	color: #009;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #006;
+	text-decoration: none;
+}
+
+.loginText {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-left: 20px;
+}
+.registerText {
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	margin-top: 8px;
+	margin-left: 20px;
+}
+
+.department_selector {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+}
+
+.formOutline {
+	margin: 5px;
+	margin-top: 10px;
+	padding: 10px;
+	padding-left: 25px;
+}
+
+.formOutlineWhite {
+	color: #000;
+}
+
+.formOutlineBlue {
+	color: #FFF;
+}
+
+.formOutline input {
+	width: 160px;
+	border: 1px solid #CCC;
+}
+
+.formOutline td.widthSet {
+	width: 75px;	
+}
+
+.clientInfo {
+	width: 100%;
+	background-color: #E1E1E1;
+	border: 1px solid #999;
+	padding: 5px;
+	border-collapse:collapse;
+}
+
+.leavemessage {
+	width: 100%;
+	background-color: #E1E1E1;
+	border: 1px solid #999;
+	padding: 5px;
+	border-collapse:collapse;
+}
+.leavemessage tr:nth-child(even) {
+	border-bottom: solid 1px #CCC;
+}
+
+.leavemessage tr:nth-child(odd) {
+	border-bottom: solid 1px #CCC;
+}
+
+.leavemessage td:nth-child(odd) {
+	padding: 5px;
+	width: 100px;
+	background: #E1E1E1;
+}
+
+.leavemessage td:nth-child(even) {
+	padding: 5px;
+	background: #F8F8F8;
+	font-size: 12px;
+}
+
+.leavemessage td input {
+	width: 200px;
+}
+
+.leavemessage td textarea {
+	width: 99%;
+	height: 200px;
+}
+
+.leavemessage tr.noborder {
+	border-bottom: none;
+}
+
+.error {
+	background-color: #ffe3e3;
+	border: solid 1px #dea6a6;
+	color: #900;
+	padding: 5px;
+	margin-bottom: 5px;
+	width: 99%;
+}
+
+.success {
+	background-color: #b3ffad;
+	border: solid 1px #00c705;
+	color: #1f7600;
+	padding: 5px;
+	margin-bottom: 5px;
+	width: 99%;
+}
