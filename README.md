@@ -44,13 +44,13 @@ Open up "/templates/YOUR-TEMPLATE-HERE/header.tpl"
 
 By default WHMCS includes jQuery, make sure this is still in your template.
 The jQuery include on your site template will look something like this:
-	<script type="text/javascript" src="../includes/jscript/jquery.js"></script>
+	&#60;script type="text/javascript" src="../includes/jscript/jquery.js"&#62;&#60;/script&#62;
 
 After the line that includes jQuery into your website add:
-<script type="text/javascript" src="http://YOUR-WHMCS-LOCATION-HERE/includes/jscript/livehelp.js.php"></script>
+&#60;script type="text/javascript" src="http://YOUR-WHMCS-LOCATION-HERE/includes/jscript/livehelp.js.php"&#62;&#60;/script&#62;
 
 Put this line anywhere in your template you want your live support icons to appear in your layout:
-<span class="livechat"></span>
+&#60;span class="livechat"&#62;&#60;/span&#62;
 
 [Note: This same process can be used throughout the rest of your site.]
 
@@ -61,4 +61,4 @@ OPTIONAL ADMIN MANAGEMENT ADDON
 In your admin template edit header.tpl ("/admin/templates/YOUR-TEMPLATE-HERE/header.tpl")
 
 Insert the following line after jQuery is included
-<script type="text/javascript" src="../includes/jscript/adminchat-notify.js.php?module={$smarty.get.module}"></script>
+&#60;script type="text/javascript" src="../includes/jscript/adminchat-notify.js.php?module={$smarty.get.module}"&#62;&#60;/script&#62;
