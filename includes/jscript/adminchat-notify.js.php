@@ -1,4 +1,4 @@
-<?
+<?php
 /*
     WHMCS Addon Live Support - Provides a way for you to instantly communicate
     with your customers.
@@ -19,12 +19,15 @@
  */
 @error_reporting(0);
 @ini_set("register_globals", "off");
-if ($_GET["module"] == "live_chat") {
+if ($_GET["module"] == "walivesupport") {
 	exit();
 }
+
+
 // Find WHMCS Directory
 //    Set $pathPart to the folder to exclude from.
 $directoryFinder = explode("/", $_SERVER["SCRIPT_FILENAME"]);
+$dir = "";
 foreach($directoryFinder as $pathPart) {
 	if ($pathPart != "") {
 		if ($pathPart != "includes") {
@@ -36,7 +39,7 @@ foreach($directoryFinder as $pathPart) {
 	}
 }
 
-require($dir."/dbconnect.php");
+require("../../init.php");
 
 # Get Variables from storage (retrieve from wherever it's stored - DB, file, etc...)
 if (!isset($chat_settings)) {
@@ -88,9 +91,15 @@ if (!$ssl && strstr($url, "http://".$_SERVER["SERVER_NAME"]) == false) {
 }
 $url = substr($url, 0, -1);
 
+$onlinestate = false;
 $result = mysql_query("SELECT * FROM `tbladminlog` WHERE `sessionid`='".$_COOKIE["PHPSESSID"]."' ORDER BY `id` DESC LIMIT 1");
 while($row = mysql_fetch_array($result)) {
 	echo "var onlineState = ".$row["online"].";\n";
+	$onlinestate = true;
+}
+
+if (!$onlinestate) {
+	echo "var onlineState = 0;\n";
 }
 ?>var t;
 var tActive;
